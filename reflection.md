@@ -14,9 +14,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+Initial App Load|Game should start with 0 attempts taken|st.session_state.attempts initializes to 1 cutting the user's total attempts short immediately|none
+Clicking New Game Button|Should completely wipe the previous game data and start fresh|The button clears the secret but fails to reset status or history, freezing the UI or leaving it stuck on a previous win/loss|,none
+Clicking New Game on Easy/Hard|The new secret number should stay within the chosen difficulty range|It forces random.randint(1, 100), generating secret numbers completely outside the visible difficulty limits|none
 
 ---
 
